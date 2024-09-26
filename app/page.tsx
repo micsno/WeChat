@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import io from 'socket.io-client';
 import './styles.css'; 
 
-const socket = io('http://localhost:3001');
+const socket = io('https://we-chat-a972312b2dba.herokuapp.com/');
 
 const Page = () => {
   const [messages, setMessages] = useState<string[]>([]);
